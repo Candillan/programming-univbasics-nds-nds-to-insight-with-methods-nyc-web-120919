@@ -20,7 +20,7 @@ end
 def gross_for_director(director_data)
   counter2 = 0
   total = 0
-  while counter2 < director_data[counter1][movies].length do
+  while counter2 < director_data[:movie].length do
     total += directors_database[counter1][movies][counter2][3]
     counter2 += 1
   end
