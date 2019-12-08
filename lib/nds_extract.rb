@@ -17,7 +17,7 @@ end
 
 # Find a way to accumulate the :worldwide_grosses and return that Integer
 # using director_data as input
-def gross_for_director(director_data, counter1)
+def gross_for_director(director_data)
   counter2 = 0
   total = 0
   while counter2 < directors_database[counter1][movies].length do
