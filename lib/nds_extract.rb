@@ -8,8 +8,8 @@ require 'directors_database'
 def directors_totals(nds)
   result = {}
   counter1 = 0
-  while counter1 < directors_database.length do
-    result.store(directors_database[counter1][name], gross_for_director(directors_database, counter1))
+  while counter1 < nds.length do
+    result.store(nds[counter1][name], gross_for_director(directors_database, counter1))
     counter1 += 1
 	end
 end
